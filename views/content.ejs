@@ -1,0 +1,80 @@
+<div id = "contactlist">
+    <h1 id = 'style'>Your Contacts</h1>
+    <div id = "output"></div>
+
+</div>
+
+
+    <script>
+        function check_phone(pnum){
+            var regex = /^((?![0-1])[0-9]{10})$/g;
+            if(regex.test(pnum.phone.value)){
+                return true;
+            }
+            else{
+                alert("The phone number must be 10 digits not started with 0 and 1.");
+                return false;
+            }
+        }
+
+    </script>
+
+<div id = "newcontact">
+    <div class = "forcon">
+        <div class = "bar">
+            <h5>New Contact Information</h5>
+        </div>
+        
+            <div class = "c_fields">
+                <div id="name">
+                    <label for="name">Name: </label><br>
+                    <input type="text" name="name" id="" class = "inputfield" required>
+                </div>
+                <div id="email">
+                    <label for="email">Email: </label><br>
+                    <input type="email" name="email" id="" class = "inputfield" required>
+                </div>
+                <div id="phone">
+                    <label for="phone">Phone: </label><br>
+                    <input type="text" name="phone" id="" class = "inputfield" required>
+                </div><br>
+                <button id = "submit">Submit</submit>
+               
+            </div>
+       
+    </div>
+</div>
+
+ 
+<div id = "editpage">
+    <div class = "forcon">
+        <div class = "bar">
+            <h5>Edit Contact</h5>
+        </div>
+        <div class = "contactfields">
+            <div id="nameedit">
+                <label for="name">Name: </label><br>
+                <input type="text" name="nameedit" id="" class = "inputfield" required>
+            </div>
+            <div id="emailedit">
+                <label for="email">Email: </label><br>
+                <input type="text" name="emailedit" id="" class = "inputfield" required>
+            </div>
+            <div id="phoneedit">
+                <label for="phone">Phone: </label><br>
+                <input type="text" name="phoneedit" id="" class = "inputfield" required>
+            </div><br>
+            <div id = "editbutton"></div>
+            
+        </div>
+    </div>
+</div>
+
+<div id = "specificdetail">
+    <div id = "detailsform">
+        <div class = "bar">
+            <h2>Contact</h2>
+        </div>
+        <div id = "specificusercontent"></div>
+    </div>
+</div>
